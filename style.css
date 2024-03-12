@@ -1,0 +1,57 @@
+.water-footprint-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://cdn.glitch.global/025bbd8d-e3e8-4cad-b33f-1a99aeccef42/Model%2Blandfill%2B27.png?v=1710202796723');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    color: #ffffff;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+#triggerBox {
+    background-color: rgba(255, 255, 255, 0.5); 
+    margin: 0 30px; 
+    width: 200px; 
+    height: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 1em;
+    text-align: center;
+    z-index: 2;
+    animation: flash 2s infinite; 
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    box-sizing: border-box;
+    display: none;
+}
+
+h1{
+   margin: 40px 0;
+    font-size: 50px;
+  text-align: center;
+  
+} 
+p {
+    margin: 20px 0;
+    font-size: 20px;
+  line-height: 2;
+}
